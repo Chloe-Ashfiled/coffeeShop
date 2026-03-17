@@ -282,3 +282,167 @@ section{
     background-color: white;
     width: 50px;
 }
+.contact{
+    background-color: var(--bgColor);
+}
+.contact h2{
+    margin-bottom: 3rem;
+}
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.contact form .inputBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .inputBox input,.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bgColor);
+    border-radius: 0.8rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+.contact form .btn{
+    margin-top: 2rem;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--main-color);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom:25px;
+    color: white;
+}
+.footer .social a{
+    font-size: 25px;
+    color: white;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display:inline-block;
+    text-align:center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+.footer .social a:hover{
+    transform: scale(1.2)
+    translateY(-10px);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3 ease;
+    text-decoration: none;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid white;
+}
+.footer .copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .reviewsContainer{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 5rem;
+    }
+}
+
+@media(max-width:990px){
+    header{
+        padding:2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .coffees{
+        padding-bottom:7rem;
+    }
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width: 895px){
+    #menuIcon{
+        display:block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: black;
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .homeContent{
+        text-align: right;
+    }
+    .homeContent h3{
+        font-size: 5rem;
+        color: var(--text-color);
+    }
+    .homeContent h1{
+        font-size: 8rem;
+        color: var(--main-color);
+    }
+    .aboutContent{
+        margin: 1rem 4rem;
+    }
+    .coffees h2{
+        margin-bottom: 3rem;
+    }
+    .reviews h2{
+        margin-bottom: 3rem;
+    }
+    .coffeesContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .reviewsContainer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
